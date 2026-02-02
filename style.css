@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff0f5, #ffe6ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main card */
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 26px 22px 30px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(214, 51, 108, 0.25);
+}
+
+/* Message text */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.9rem;
+  line-height: 1.4;
+  color: #d6336c;
+  margin-bottom: 24px;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* YES button */
+#yesBtn {
+  background: linear-gradient(135deg, #ff5c8a, #ff7aa2);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(255, 92, 138, 0.35);
+}
+
+#yesBtn:active {
+  transform: scale(0.96);
+}
+
+/* NO button */
+#noBtn {
+  background: #ffffff;
+  color: #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 22px;
+  animation: floatUp 6s linear forwards;
+  opacity: 0.8;
+  pointer-events: none;
